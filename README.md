@@ -12,7 +12,7 @@ To ensure the highest accuracy for fraud detection, I experimented with various 
 
 ## 🧠 Technical Learning Journey
 
-* **Handling Class Imbalance with SMOTE:** Financial datasets are typically highly skewed (majority of transactions are genuine). I utilized **SMOTE (Synthetic Minority Over-sampling Technique)** to generate synthetic samples for the minority class (fraud). This prevented the model from being biased towards the majority class and significantly improved the detection of fraudulent patterns.
+ * **Handling Class Imbalance with SMOTETomek:** Financial datasets are highly skewed. I utilized the **SMOTETomek** hybrid technique—combining SMOTE (for over-sampling the minority class) and Tomek Links (for cleaning the overlapping data points). This approach not only balanced the dataset but also improved the class separation, making the fraud patterns much clearer for the models.
   
 * **Model Selection & Ensemble Strategy:** I compared Random Forest, LightGBM, and XGBoost. While all models performed consistently, **XGBoost** was selected for its superior PR-AUC score and stability in handling sparse, imbalanced features. I explored ensemble techniques to ensure the model captured diverse transaction behaviors.
 
