@@ -30,7 +30,7 @@ __main__.custom_xgboost = custom_xgboost
 
 pipeline=joblib.load("pipeline5.pkl")
 model=joblib.load("model5.pkl")
-st.image("https://analyticsstepsfiles.s3.ap-south-1.amazonaws.com/backend/media/thumbnail/8088868/1483963_1631793709_AI%20in%20Fraud%20DetectionArtboard%201.jpg")
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYBy5UCwmpREJTWI39oxe82Ueysd7LehhHzSNOovl2f1OiHV5fmlKvoY&s=10",width=400)
 st.title("Fraud Detection App ")
 paymant_list=data['payment_method'].unique().tolist()
 payment_method=st.selectbox("Enter the Payment Method",paymant_list)
