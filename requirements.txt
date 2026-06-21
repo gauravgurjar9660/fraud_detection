@@ -2,7 +2,7 @@ pandas
 numpy
 matplotlib
 seaborn
-
+imbalanced-learn
 scikit-learn
 xgboost
 joblib
