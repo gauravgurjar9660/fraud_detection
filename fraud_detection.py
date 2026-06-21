@@ -134,7 +134,7 @@ if st.button("Click Here"):
         precision_f, recall_f, _ = precision_recall_curve(y_test_binary, prob_xgb)
         auc_f = auc(recall_f, precision_f)
         fig,ax=plt.subplots(figsize=(10,6))
-        ax.plot(recall_f, precision_f, color='red', label=f'ensemble Learning (PR-AUC = {auc_f:.4f})') 
+        ax.plot(recall_f, precision_f, color='red', label=f' fraud_detection by xgboost  (PR-AUC = {auc_f:.4f})') 
         ax.set_title('Precision-Recall Curve for High Risk (Class 2)')
         ax.set_xlabel('Recall (capacity of detecte  fraud)')
         ax.set_ylabel('Precision (Perfection of fraud detection )')
